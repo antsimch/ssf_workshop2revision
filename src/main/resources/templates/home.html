@@ -13,5 +13,7 @@
             <input type="input" name="number" id="number">
             <input type="submit" value="Generate">
         </form>
+        <br>
+        <p data-th-if="${errorMessage != null}">[[${errorMessage}]]</p>
     </body>
 </html>
