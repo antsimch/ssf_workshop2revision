@@ -7,6 +7,12 @@
     <title>Document</title>
 </head>
     <body>
-        
+        <h1>Your list of <label data-th-text="${images.size()}"></label> random numbers</h1>
+        <br>
+        <div data-th-if="${not #lists.isEmpty(images)}">
+            <div data-th-each="image: ${images}">
+                <img width="200" data-th-src="@{${image.path}}">
+            </div>
+        </div>
     </body>
 </html>

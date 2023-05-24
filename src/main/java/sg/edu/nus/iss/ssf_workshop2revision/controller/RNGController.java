@@ -52,6 +52,7 @@ public class RNGController {
             // System.out.println(image);
         }
 
+        model.addAttribute("images", images);
         // System.out.println(images);
 
         return "generate";
